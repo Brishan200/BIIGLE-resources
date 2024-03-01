@@ -293,7 +293,7 @@ new_yolo_labels <- c()
 
  
 # how many images total are you taking? - - - - - - - - - - - - - - - - - - - - 
-resample_images <- 1000
+resample_images <- 1500
 
 
 
@@ -306,12 +306,12 @@ downloadimages <- "no" # "yes" / "anything else"
     # example: "https://serverserverserver.s3.eu-west-2.amaaws.com/cruisephotos"
     # note that this will not work if your images are on Biigle's server (url will not be valid for DL)
     # or, set path to local images:
-    local_images_dir <- "C:/path/to/images/dir"
+    local_images_dir <- paste(wd,"/imgs",sep="")
     # example:
     #      "C:/path/to/images/dir"
     
 # set the proportion of images that will go into the training set - - - - - - 
-    pcent_to_train <- 0.75 # 0.75 is 75% in training 25% for validaiton
+    pcent_to_train <- 0.70 # 0.75 is 75% in training 25% for validaiton
     
 
 
